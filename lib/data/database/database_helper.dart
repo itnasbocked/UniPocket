@@ -22,7 +22,7 @@ class DatabaseHelper {
 
       await Share.shareXFiles(
         [archivoParaEnviar],
-        text: 'Respaldo de Base de Datos DebtMaster - Auditoría QA',
+        text: 'Respaldo de Base de Datos UniPocket - Auditoría QA',
       );
     } catch (e) {
       debugPrint("Error al intentar compartir la BD: $e");
@@ -31,7 +31,7 @@ class DatabaseHelper {
 
   Future<Database> get database async {
     if (_database != null) return _database!;
-    _database = await _initDB('debtmaster.db');
+    _database = await _initDB('unipocket.db');
     return _database!;
   }
 
@@ -105,7 +105,7 @@ class DatabaseHelper {
 
     await db.insert('usuario', {
     'nombre': 'Admin',
-    'correo': 'admin@debtmaster.com',
+    'correo': 'admin@unipocket.com',
     'contrasena': 'admin123',
     'ingreso_mensual': 1000000, // En centavos
     });

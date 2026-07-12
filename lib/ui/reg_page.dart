@@ -31,7 +31,7 @@ class _RegPageState extends State<RegPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "DebtMaster",
+                  "UniPocket",
                   style: TextStyle(
                     fontSize: 34,
                     fontWeight: FontWeight.w900,

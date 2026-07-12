@@ -24,7 +24,7 @@
       await _plugin.initialize(settings: initSettings);
 
       const AndroidNotificationChannel canal = AndroidNotificationChannel(
-        'canal_DebtMaster',
+        'canal_UniPocket',
         'Recordatorios',
         description: 'Notificaciones importantes',
         importance: Importance.max,
@@ -63,7 +63,7 @@
         scheduledDate: scheduleDate,
         notificationDetails: const NotificationDetails(
           android: AndroidNotificationDetails(
-            'canal_DebtMaster',
+            'canal_UniPocket',
             'Recordatorios',
             importance: Importance.max,
             priority: Priority.high,
@@ -82,7 +82,7 @@
           title: "Prueba de renderizado",
           body: "Revisión del renderizado en proceso",
           notificationDetails: const NotificationDetails(
-            android: AndroidNotificationDetails('canal_DebtMaster', 
+            android: AndroidNotificationDetails('canal_UniPocket', 
             'Recordatorios',
             importance: Importance.max,
             priority: Priority.high,

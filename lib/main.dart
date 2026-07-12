@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'DebtMaster',
+      title: 'UniPocket',
       home: FutureBuilder<int?>(
       future: _obtenerSesionRecurrente(),
       builder: (context, snapshot) {

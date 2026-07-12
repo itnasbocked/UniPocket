@@ -85,7 +85,7 @@ class _AuthPageState extends State<AuthPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "DebtMaster",
+                "UniPocket",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.w900,

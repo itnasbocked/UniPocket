@@ -1,4 +1,4 @@
-package com.example.dm
+package com.itnasbocked.unipocket
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "DebtMaster",
+            "name": "UniPocket",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "DebtMaster (profile mode)",
+            "name": "UniPocket (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "DebtMaster (release mode)",
+            "name": "UniPocket (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -49,7 +49,7 @@ class TarjetasScreenState extends State<TarjetasScreen> {
       await NotificationService().programarNotificacion(
         DateTime.now().millisecondsSinceEpoch ~/ 1000 + 1, 
         "Día de Corte: $nombre",
-        "Hoy cierra tu tarjeta. No olvides declarar el saldo en DebtMaster.",
+        "Hoy cierra tu tarjeta. No olvides declarar el saldo en UniPocket.",
         fechaCorte
       );
     } catch (e) {
