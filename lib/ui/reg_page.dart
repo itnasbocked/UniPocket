@@ -85,15 +85,6 @@ class _RegPageState extends State<RegPage> {
                         keyboardType: TextInputType.emailAddress,
                       ),
                       const SizedBox(height: 20),
-                      
-                      _buildInputLabel("Ingreso Mensual (\$)"),
-                      _buildTextField(
-                        hint: "Ej. 15000",
-                        icon: Icons.attach_money,
-                        controller: _ingresoCtrl,
-                        keyboardType: const TextInputType.numberWithOptions(decimal: true),
-                      ),
-                      const SizedBox(height: 20),
 
                       _buildInputLabel("Contraseña"),
                       _buildTextField(

@@ -8,7 +8,7 @@ class DatabaseHelper {
 
   static final DatabaseHelper instance = DatabaseHelper._init();
   static Database? _database;
-
+  
   DatabaseHelper._init();
 
   int? userId;
@@ -56,7 +56,7 @@ class DatabaseHelper {
         nombre TEXT NOT NULL,
         correo TEXT NOT NULL UNIQUE,      -- Añadido para el login
         contrasena TEXT NOT NULL,         -- Añadido para el login
-        ingreso_mensual INTEGER NOT NULL
+        ingreso_mensual INTEGER NULL
       )
     ''');
 
@@ -70,7 +70,7 @@ class DatabaseHelper {
     tipo TEXT,
     corte_dia INTEGER,
     pago_dia INTEGER,
-    monto_minimo INTEGER,
+    monto_minimo REAL,
     pagada INTEGER,
     ultimo_mes_pagado INTEGER
   )

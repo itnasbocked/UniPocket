@@ -1,9 +1,10 @@
 import 'dart:io';
 import 'package:dm/data/database/database_helper.dart';
-// import 'package:dm/ui/tarjetas_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:dm/theme/app_colors.dart';
 
 import 'package:dm/ui/auth_page.dart';
 import 'package:dm/ui/main_screen.dart';
@@ -39,6 +40,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'UniPocket',
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.fondo,
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.primario,
+        surface: AppColors.fondo,
+        error: Colors.redAccent
+      ), 
+      inputDecorationTheme: const InputDecorationTheme(
+        labelStyle: TextStyle(color: AppColors.textoMuted),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: AppColors.primario, width: 2)
+        ),
+      )
+      ),
       home: FutureBuilder<int?>(
       future: _obtenerSesionRecurrente(),
       builder: (context, snapshot) {

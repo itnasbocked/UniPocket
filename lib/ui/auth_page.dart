@@ -1,3 +1,4 @@
+import 'package:dm/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'main_screen.dart';
@@ -18,18 +19,13 @@ class _AuthPageState extends State<AuthPage> {
   // Variable de estado para evitar que el usuario haga spam de clics
   bool _isLoading = false; 
 
-  // Paleta de colores
-  final Color primaryBlue = const Color(0xFF2962FF);
-  final Color backgroundColor = const Color(0xFFF2F4F7);
-  final Color labelColor = const Color(0xFF4B4F54);
-
   Future<void> _ejecutarLogin() async {
     String user = _userController.text.trim();
     String pass = _passController.text.trim();
 
     if (user.isEmpty || pass.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Por favor, llena todos los campos"), backgroundColor: Colors.orange)
+        const SnackBar(content: Text("Por favor, llena todos los campos"), backgroundColor: AppColors.alerta)
       );
       return;
     }
@@ -77,7 +73,7 @@ class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: AppColors.fondo,
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),
@@ -89,7 +85,7 @@ class _AuthPageState extends State<AuthPage> {
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.w900,
-                  color: primaryBlue,
+                  color: AppColors.primario,
                   letterSpacing: -1.5,
                 ),
               ),
@@ -98,7 +94,7 @@ class _AuthPageState extends State<AuthPage> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: AppColors.fondo,
                   borderRadius: BorderRadius.circular(32),
                   boxShadow: [
                     BoxShadow(
