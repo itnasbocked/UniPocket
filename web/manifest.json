@@ -1,6 +1,6 @@
 {
-    "name": "dm",
-    "short_name": "dm",
+    "name": "unipocket",
+    "short_name": "unipocket",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
